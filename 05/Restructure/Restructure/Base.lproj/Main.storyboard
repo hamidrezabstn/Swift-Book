@@ -21,62 +21,90 @@
                                 <rect key="frame" x="45" y="534" width="76" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Action Two"/>
-                                <variation key="heightClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="504" y="85" width="76" height="30"/>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAK-IM-x4v">
-                                <rect key="frame" x="476" y="534" width="79" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Action Four"/>
-                                <variation key="heightClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="476" y="334" width="79" height="30"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="504" y="127" width="76" height="30"/>
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0U-R0-4Hb">
                                 <rect key="frame" x="472" y="496" width="88" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Action Three"/>
-                                <variation key="heightClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="476" y="282" width="88" height="30"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="504" y="253" width="88" height="30"/>
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3i-5e-xtg">
                                 <rect key="frame" x="45" y="496" width="76" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Action One"/>
-                                <variation key="heightClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="504" y="28" width="76" height="30"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="504" y="56" width="76" height="30"/>
                                 </variation>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayy-wg-rDL">
                                 <rect key="frame" x="20" y="28" width="560" height="460"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="heightClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="24" width="436" height="352"/>
-                                </variation>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAK-IM-x4v">
+                                <rect key="frame" x="476" y="534" width="79" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Action Four"/>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="504" y="333" width="79" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ayy-wg-rDL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="07x-Ju-577"/>
                             <constraint firstItem="p3i-5e-xtg" firstAttribute="top" secondItem="ayy-wg-rDL" secondAttribute="bottom" constant="8" id="29E-4G-wdD"/>
                             <constraint firstItem="p3i-5e-xtg" firstAttribute="leading" secondItem="o33-4i-fxP" secondAttribute="leading" id="3X0-pT-che"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o33-4i-fxP" secondAttribute="bottom" constant="36" id="AVK-bf-YOa"/>
                             <constraint firstItem="ayy-wg-rDL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="EeR-eM-ot5"/>
                             <constraint firstItem="QAK-IM-x4v" firstAttribute="top" secondItem="L0U-R0-4Hb" secondAttribute="bottom" constant="8" id="Oz7-cI-exP"/>
                             <constraint firstItem="L0U-R0-4Hb" firstAttribute="centerX" secondItem="QAK-IM-x4v" secondAttribute="centerX" id="Spp-zr-byg"/>
+                            <constraint firstItem="ayy-wg-rDL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="b4C-TZ-Roa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ayy-wg-rDL" secondAttribute="trailing" constant="84" id="iQa-LT-Uly"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QAK-IM-x4v" secondAttribute="bottom" constant="36" id="juo-ac-YHp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QAK-IM-x4v" secondAttribute="trailing" constant="25" id="mRH-ss-9TA"/>
                             <constraint firstItem="ayy-wg-rDL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ofF-2V-JbC"/>
                             <constraint firstItem="o33-4i-fxP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="qtI-zK-jXT"/>
                             <constraint firstItem="ayy-wg-rDL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sfu-sw-9ma"/>
                             <constraint firstItem="o33-4i-fxP" firstAttribute="top" secondItem="p3i-5e-xtg" secondAttribute="bottom" constant="8" id="yJh-n6-biT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ayy-wg-rDL" secondAttribute="bottom" constant="20" id="zsY-l2-9ZB"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="07x-Ju-577"/>
+                                <exclude reference="b4C-TZ-Roa"/>
+                                <exclude reference="iQa-LT-Uly"/>
+                                <exclude reference="zsY-l2-9ZB"/>
+                            </mask>
+                        </variation>
                         <variation key="heightClass=compact">
                             <mask key="subviews">
                                 <include reference="p3i-5e-xtg"/>
+                                <include reference="ayy-wg-rDL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="07x-Ju-577"/>
+                                <exclude reference="EeR-eM-ot5"/>
+                                <include reference="b4C-TZ-Roa"/>
+                                <include reference="iQa-LT-Uly"/>
+                                <exclude reference="ofF-2V-JbC"/>
+                                <exclude reference="sfu-sw-9ma"/>
+                                <exclude reference="AVK-bf-YOa"/>
+                                <exclude reference="juo-ac-YHp"/>
+                                <include reference="zsY-l2-9ZB"/>
+                                <exclude reference="29E-4G-wdD"/>
+                                <exclude reference="3X0-pT-che"/>
+                                <exclude reference="qtI-zK-jXT"/>
+                                <exclude reference="yJh-n6-biT"/>
+                                <exclude reference="Spp-zr-byg"/>
+                                <exclude reference="Oz7-cI-exP"/>
+                                <exclude reference="mRH-ss-9TA"/>
                             </mask>
                         </variation>
                     </view>
