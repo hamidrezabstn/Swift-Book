@@ -75,10 +75,44 @@
                     <view key="view" contentMode="scaleToFill" id="wbU-xk-2qN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8F-7Q-6WZ">
+                                <rect key="frame" x="278" y="285" width="44" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="dnA-Gj-Grv" eventType="touchUpInside" id="hGs-WN-gBW"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3z6-ou-B6x">
+                                <rect key="frame" x="0.0" y="20" width="600" height="216"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="475829962.67467201">
+                                    <!--2016-01-30 06:59:22 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="6311300400">
+                                    <!--2200-12-31 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g8F-7Q-6WZ" firstAttribute="centerX" secondItem="wbU-xk-2qN" secondAttribute="centerX" id="Mh0-CG-nOd"/>
+                            <constraint firstItem="3z6-ou-B6x" firstAttribute="top" secondItem="MmM-iP-WxE" secondAttribute="bottom" id="PtY-9h-iiT"/>
+                            <constraint firstItem="3z6-ou-B6x" firstAttribute="leading" secondItem="wbU-xk-2qN" secondAttribute="leading" id="RSJ-AA-trd"/>
+                            <constraint firstItem="3z6-ou-B6x" firstAttribute="centerX" secondItem="wbU-xk-2qN" secondAttribute="centerX" id="nEu-hp-Wrc"/>
+                            <constraint firstItem="g8F-7Q-6WZ" firstAttribute="centerY" secondItem="wbU-xk-2qN" secondAttribute="centerY" id="o5H-uM-CYT"/>
+                            <constraint firstAttribute="trailing" secondItem="3z6-ou-B6x" secondAttribute="trailing" id="ze5-0g-8sN"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Date" image="clockicon" id="dbi-W0-Usm"/>
+                    <connections>
+                        <outlet property="datePicker" destination="3z6-ou-B6x" id="aId-H2-kbq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJq-Vg-J0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
