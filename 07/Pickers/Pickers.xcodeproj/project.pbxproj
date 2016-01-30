@@ -12,6 +12,11 @@
 		1F3E18641C5C8C81000BE30A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E18621C5C8C81000BE30A /* Main.storyboard */; };
 		1F3E18661C5C8C81000BE30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E18651C5C8C81000BE30A /* Assets.xcassets */; };
 		1F3E18691C5C8C81000BE30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3E18671C5C8C81000BE30A /* LaunchScreen.storyboard */; };
+		1F3E18711C5C8DFD000BE30A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E18701C5C8DFD000BE30A /* DatePickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1F3E18731C5C8E3E000BE30A /* SingleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E18721C5C8E3E000BE30A /* SingleComponentPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1F3E18751C5C8E56000BE30A /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E18741C5C8E56000BE30A /* DoubleComponentPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1F3E18771C5C8E6D000BE30A /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E18761C5C8E6D000BE30A /* DependentComponentPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1F3E18791C5C8E88000BE30A /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E18781C5C8E88000BE30A /* CustomPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		1F3E18651C5C8C81000BE30A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F3E18681C5C8C81000BE30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F3E186A1C5C8C81000BE30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3E18701C5C8DFD000BE30A /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		1F3E18721C5C8E3E000BE30A /* SingleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleComponentPickerViewController.swift; sourceTree = "<group>"; };
+		1F3E18741C5C8E56000BE30A /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
+		1F3E18761C5C8E6D000BE30A /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
+		1F3E18781C5C8E88000BE30A /* CustomPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				1F3E18651C5C8C81000BE30A /* Assets.xcassets */,
 				1F3E18671C5C8C81000BE30A /* LaunchScreen.storyboard */,
 				1F3E186A1C5C8C81000BE30A /* Info.plist */,
+				1F3E18701C5C8DFD000BE30A /* DatePickerViewController.swift */,
+				1F3E18721C5C8E3E000BE30A /* SingleComponentPickerViewController.swift */,
+				1F3E18741C5C8E56000BE30A /* DoubleComponentPickerViewController.swift */,
+				1F3E18761C5C8E6D000BE30A /* DependentComponentPickerViewController.swift */,
+				1F3E18781C5C8E88000BE30A /* CustomPickerViewController.swift */,
 			);
 			path = Pickers;
 			sourceTree = "<group>";
@@ -136,6 +151,11 @@
 			files = (
 				1F3E18611C5C8C81000BE30A /* ViewController.swift in Sources */,
 				1F3E185F1C5C8C81000BE30A /* AppDelegate.swift in Sources */,
+				1F3E18771C5C8E6D000BE30A /* DependentComponentPickerViewController.swift in Sources */,
+				1F3E18751C5C8E56000BE30A /* DoubleComponentPickerViewController.swift in Sources */,
+				1F3E18791C5C8E88000BE30A /* CustomPickerViewController.swift in Sources */,
+				1F3E18731C5C8E3E000BE30A /* SingleComponentPickerViewController.swift in Sources */,
+				1F3E18711C5C8DFD000BE30A /* DatePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
