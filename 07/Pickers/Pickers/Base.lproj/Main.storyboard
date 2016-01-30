@@ -84,10 +84,38 @@
                     <view key="view" contentMode="scaleToFill" id="Ocb-fk-wlP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-RI-7Uc">
+                                <rect key="frame" x="278" y="285" width="44" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="a7w-ec-hBC" eventType="touchUpInside" id="1Um-w9-xP3"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EME-QO-3PX">
+                                <rect key="frame" x="0.0" y="28" width="600" height="216"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="a7w-ec-hBC" id="ufo-IY-aZN"/>
+                                    <outlet property="delegate" destination="a7w-ec-hBC" id="eIC-xI-7bS"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nfO-RI-7Uc" firstAttribute="centerY" secondItem="Ocb-fk-wlP" secondAttribute="centerY" id="YZc-my-fgX"/>
+                            <constraint firstItem="EME-QO-3PX" firstAttribute="top" secondItem="Fgs-w9-ggA" secondAttribute="bottom" constant="8" id="hIn-ig-oCI"/>
+                            <constraint firstItem="EME-QO-3PX" firstAttribute="leading" secondItem="Ocb-fk-wlP" secondAttribute="leading" id="iFB-FJ-u8W"/>
+                            <constraint firstItem="nfO-RI-7Uc" firstAttribute="centerX" secondItem="Ocb-fk-wlP" secondAttribute="centerX" id="jjl-6r-FaA"/>
+                            <constraint firstAttribute="trailing" secondItem="EME-QO-3PX" secondAttribute="trailing" id="z27-CM-Kn2"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="cCm-b6-Jwx"/>
+                    <connections>
+                        <outlet property="doublePicker" destination="EME-QO-3PX" id="MEc-vA-g76"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMt-JP-LIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
