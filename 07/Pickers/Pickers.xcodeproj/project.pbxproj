@@ -17,7 +17,9 @@
 		1F3E18751C5C8E56000BE30A /* DoubleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E18741C5C8E56000BE30A /* DoubleComponentPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1F3E18771C5C8E6D000BE30A /* DependentComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E18761C5C8E6D000BE30A /* DependentComponentPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1F3E18791C5C8E88000BE30A /* CustomPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E18781C5C8E88000BE30A /* CustomPickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		E80A73621C5D452800C95EF9 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = E80A73611C5D452800C95EF9 /* statedictionary.plist */; settings = {ASSET_TAGS = (); }; };
+		1FFA1B9B1C5DD0DD0020D82C /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FFA1B9A1C5DD0DD0020D82C /* statedictionary.plist */; settings = {ASSET_TAGS = (); }; };
+		1FFA1B9E1C5DDC810020D82C /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1FFA1B9C1C5DDC810020D82C /* crunch.wav */; settings = {ASSET_TAGS = (); }; };
+		1FFA1B9F1C5DDC810020D82C /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1FFA1B9D1C5DDC810020D82C /* win.wav */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +35,9 @@
 		1F3E18741C5C8E56000BE30A /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		1F3E18761C5C8E6D000BE30A /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
 		1F3E18781C5C8E88000BE30A /* CustomPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
-		E80A73611C5D452800C95EF9 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = statedictionary.plist; path = "../../../../../Downloads/9781484204108/Examples/07 - Picker Data/statedictionary.plist"; sourceTree = "<group>"; };
+		1FFA1B9A1C5DD0DD0020D82C /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = statedictionary.plist; path = "../../../../../Downloads/Example Source Code/07 - Picker Data/statedictionary.plist"; sourceTree = "<group>"; };
+		1FFA1B9C1C5DDC810020D82C /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = crunch.wav; path = "../../../../../Downloads/Example Source Code/07 - Picker Sounds/crunch.wav"; sourceTree = "<group>"; };
+		1FFA1B9D1C5DDC810020D82C /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = win.wav; path = "../../../../../Downloads/Example Source Code/07 - Picker Sounds/win.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +70,9 @@
 		1F3E185D1C5C8C81000BE30A /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
-				E80A73611C5D452800C95EF9 /* statedictionary.plist */,
+				1FFA1B9C1C5DDC810020D82C /* crunch.wav */,
+				1FFA1B9D1C5DDC810020D82C /* win.wav */,
+				1FFA1B9A1C5DD0DD0020D82C /* statedictionary.plist */,
 				1F3E185E1C5C8C81000BE30A /* AppDelegate.swift */,
 				1F3E18601C5C8C81000BE30A /* ViewController.swift */,
 				1F3E18621C5C8C81000BE30A /* Main.storyboard */,
@@ -139,9 +145,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFA1B9E1C5DDC810020D82C /* crunch.wav in Resources */,
 				1F3E18691C5C8C81000BE30A /* LaunchScreen.storyboard in Resources */,
 				1F3E18661C5C8C81000BE30A /* Assets.xcassets in Resources */,
-				E80A73621C5D452800C95EF9 /* statedictionary.plist in Resources */,
+				1FFA1B9F1C5DDC810020D82C /* win.wav in Resources */,
+				1FFA1B9B1C5DD0DD0020D82C /* statedictionary.plist in Resources */,
 				1F3E18641C5C8C81000BE30A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

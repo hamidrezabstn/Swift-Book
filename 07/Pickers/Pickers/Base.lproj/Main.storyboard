@@ -64,10 +64,49 @@
                     <view key="view" contentMode="scaleToFill" id="kGa-7M-VTI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfc-SI-Ueu">
+                                <rect key="frame" x="276" y="284" width="48" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82u-a5-cwC">
+                                <rect key="frame" x="285" y="304" width="31" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Spin"/>
+                                <connections>
+                                    <action selector="spin:" destination="f80-hx-J6j" eventType="touchUpInside" id="mkn-ho-da9"/>
+                                </connections>
+                            </button>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-bR-7QT">
+                                <rect key="frame" x="0.0" y="28" width="600" height="216"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="f80-hx-J6j" id="rOb-R2-9yd"/>
+                                    <outlet property="delegate" destination="f80-hx-J6j" id="HCI-QG-lH2"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pfc-SI-Ueu" firstAttribute="top" secondItem="X4W-bR-7QT" secondAttribute="bottom" constant="40" id="0aW-p6-i5Q"/>
+                            <constraint firstItem="Pfc-SI-Ueu" firstAttribute="centerX" secondItem="kGa-7M-VTI" secondAttribute="centerX" id="J0a-9p-4lm"/>
+                            <constraint firstAttribute="trailing" secondItem="X4W-bR-7QT" secondAttribute="trailing" id="abl-ZG-qhU"/>
+                            <constraint firstItem="X4W-bR-7QT" firstAttribute="leading" secondItem="kGa-7M-VTI" secondAttribute="leading" id="eNN-Uc-Iex"/>
+                            <constraint firstItem="82u-a5-cwC" firstAttribute="top" secondItem="X4W-bR-7QT" secondAttribute="bottom" constant="60" id="f5y-fs-IAd"/>
+                            <constraint firstItem="82u-a5-cwC" firstAttribute="centerX" secondItem="kGa-7M-VTI" secondAttribute="centerX" id="iYV-IG-xoa"/>
+                            <constraint firstItem="X4W-bR-7QT" firstAttribute="top" secondItem="YjP-4z-Yki" secondAttribute="bottom" constant="8" id="wq9-sc-nJ8"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="nSY-0J-8Gn"/>
+                    <connections>
+                        <outlet property="resultLbl" destination="Pfc-SI-Ueu" id="jLR-nO-XGV"/>
+                        <outlet property="slotPicker" destination="X4W-bR-7QT" id="a8H-Cv-dgm"/>
+                        <outlet property="spinBtn" destination="82u-a5-cwC" id="0N9-QP-Pvr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1n-sD-fB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,13 +184,13 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="216"/>
                                 <animations/>
                                 <date key="date" timeIntervalSinceReferenceDate="475829962.67467201">
-                                    <!--۱۳۹۴-۱۱-۱۰ ۰۶:۵۹:۲۲ +0000-->
+                                    <!--2016-01-30 06:59:22 +0000-->
                                 </date>
                                 <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
-                                    <!--۱۳۴۸-۱۰-۱۱ ۱۱:۰۰:۰۰ +0000-->
+                                    <!--1970-01-01 11:00:00 +0000-->
                                 </date>
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="6311300400">
-                                    <!--۱۵۷۹-۱۰-۱۰ ۱۱:۰۰:۰۰ +0000-->
+                                    <!--2200-12-31 11:00:00 +0000-->
                                 </date>
                             </datePicker>
                         </subviews>
