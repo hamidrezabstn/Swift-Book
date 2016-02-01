@@ -13,6 +13,7 @@
 		1F019E0A1C5F2DB50050E2F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F019E091C5F2DB50050E2F9 /* Assets.xcassets */; };
 		1F019E0D1C5F2DB50050E2F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F019E0B1C5F2DB50050E2F9 /* LaunchScreen.storyboard */; };
 		1F019E151C5F2F680050E2F9 /* NameAndColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F019E141C5F2F680050E2F9 /* NameAndColorCell.swift */; settings = {ASSET_TAGS = (); }; };
+		1F019E171C5F425E0050E2F9 /* NameAndColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F019E161C5F425E0050E2F9 /* NameAndColorCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1F019E0C1C5F2DB50050E2F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F019E0E1C5F2DB50050E2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F019E141C5F2F680050E2F9 /* NameAndColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameAndColorCell.swift; sourceTree = "<group>"; };
+		1F019E161C5F425E0050E2F9 /* NameAndColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameAndColorCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1F019E0B1C5F2DB50050E2F9 /* LaunchScreen.storyboard */,
 				1F019E0E1C5F2DB50050E2F9 /* Info.plist */,
 				1F019E141C5F2F680050E2F9 /* NameAndColorCell.swift */,
+				1F019E161C5F425E0050E2F9 /* NameAndColorCell.xib */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F019E171C5F425E0050E2F9 /* NameAndColorCell.xib in Resources */,
 				1F019E0D1C5F2DB50050E2F9 /* LaunchScreen.storyboard in Resources */,
 				1F019E0A1C5F2DB50050E2F9 /* Assets.xcassets in Resources */,
 				1F019E081C5F2DB50050E2F9 /* Main.storyboard in Resources */,

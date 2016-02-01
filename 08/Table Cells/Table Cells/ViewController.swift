@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController , UITableViewDataSource {
+class ViewController: UIViewController , UITableViewDataSource{
     let cellIdentifier = "cellIdentifier"
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,6 +25,12 @@ class ViewController: UIViewController , UITableViewDataSource {
         // Do any additional setup after loading the view, typically from a nib.
         
         tableView.registerClass(NameAndColorCell.self, forCellReuseIdentifier: cellIdentifier)
+        
+        let nib = UINib(nibName: "NameAndColorCell", bundle: nil)
+        tableView.registerNib(nib, forCellReuseIdentifier: cellIdentifier)
+        
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = 100
     }
 
     override func didReceiveMemoryWarning() {
