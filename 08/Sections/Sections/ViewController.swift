@@ -14,6 +14,7 @@ class ViewController: UIViewController , UITableViewDataSource {
     @IBOutlet weak var sectionTable: UITableView!
     private var names : [String : [String]]!
     private var keys : [String]!
+    var searchController : UISearchController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,25 @@ class ViewController: UIViewController , UITableViewDataSource {
         names = data as! [String:[String]]!
         keys = data?.allKeys as! [String]!
         keys.sortInPlace()
+        
+        
+        let resultController = SearchResultsController()
+        resultController.names = names
+        resultController.keys = keys
+        
+        searchController = UISearchController(searchResultsController: resultController)
+        
+        let searchBar = searchController.searchBar
+        
+        searchBar.scopeButtonTitles = ["All","Short","Long"]
+        searchBar.placeholder = "Enter search term here"
+        searchBar.sizeToFit()
+        sectionTable.tableHeaderView = searchBar
+        searchController.searchResultsUpdater = resultController
+        
+        sectionTable.sectionIndexBackgroundColor = UIColor.blackColor()
+        sectionTable.sectionIndexTrackingBackgroundColor = UIColor.darkGrayColor()
+        sectionTable.sectionIndexColor = UIColor.whiteColor()
         
     }
 
