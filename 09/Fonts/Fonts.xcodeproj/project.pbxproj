@@ -12,6 +12,7 @@
 		1F601B111C61CEAD00EF7287 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F601B0F1C61CEAD00EF7287 /* Main.storyboard */; };
 		1F601B131C61CEAD00EF7287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F601B121C61CEAD00EF7287 /* Assets.xcassets */; };
 		1F601B161C61CEAD00EF7287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F601B141C61CEAD00EF7287 /* LaunchScreen.storyboard */; };
+		1F601B1E1C61D2E900EF7287 /* FavoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601B1D1C61D2E900EF7287 /* FavoriteList.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1F601B121C61CEAD00EF7287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F601B151C61CEAD00EF7287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F601B171C61CEAD00EF7287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F601B1D1C61D2E900EF7287 /* FavoriteList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				1F601B121C61CEAD00EF7287 /* Assets.xcassets */,
 				1F601B141C61CEAD00EF7287 /* LaunchScreen.storyboard */,
 				1F601B171C61CEAD00EF7287 /* Info.plist */,
+				1F601B1D1C61D2E900EF7287 /* FavoriteList.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F601B1E1C61D2E900EF7287 /* FavoriteList.swift in Sources */,
 				1F601B0E1C61CEAD00EF7287 /* ViewController.swift in Sources */,
 				1F601B0C1C61CEAD00EF7287 /* AppDelegate.swift in Sources */,
 			);
