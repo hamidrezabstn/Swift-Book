@@ -29,7 +29,7 @@ class FontInfoViewController: UIViewController {
             + "WwXxYyZz 0123456789"
         fontSizeSlider.value = Float(font.pointSize)
         fontSizeLabel.text = "\(Int(font.pointSize))"
-        favoriteSwitch.on = false
+        favoriteSwitch.on = FavoriteList.sharedFavoriteList.favorites.contains(font.fontName)
         
     }
     
