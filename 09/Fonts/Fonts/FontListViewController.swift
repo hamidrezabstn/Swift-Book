@@ -59,13 +59,20 @@ class FontListViewController: UITableViewController {
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let fontSizeList = segue.destinationViewController as! FontSizesViewController
         let selectedFontCell = sender as! UITableViewCell
         let indexPath = tableView.indexPathForCell(selectedFontCell)
+        let selectedFont = getFont(atIndexPath: indexPath!)!
         
-        
-        fontSizeList.font = getFont(atIndexPath: indexPath!)
-        fontSizeList.title = getFont(atIndexPath: indexPath!)?.fontName
-        
+        if segue.identifier == "ShowFontSize"{
+        let fontSizeList = segue.destinationViewController as! FontSizesViewController
+        fontSizeList.font = selectedFont
+        fontSizeList.title = selectedFont.fontName
+            
+        }else{
+        let fontInfo = segue.destinationViewController as! FontInfoViewController
+        fontInfo.font = selectedFont
+        fontInfo.title = selectedFont.fontName
+        fontInfo.favorite = FavoriteList.sharedFavoriteList.favorites.contains(selectedFont.fontName)
+        }
     }
 }
