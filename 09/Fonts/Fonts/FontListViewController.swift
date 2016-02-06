@@ -22,6 +22,10 @@ class FontListViewController: UITableViewController {
         cellPointSize = preferedTableViewFont.pointSize
         tableView.estimatedRowHeight = cellPointSize
         
+        if showFavorites {
+            navigationItem.rightBarButtonItem = editButtonItem()
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,4 +79,30 @@ class FontListViewController: UITableViewController {
         fontInfo.favorite = FavoriteList.sharedFavoriteList.favorites.contains(selectedFont.fontName)
         }
     }
+    
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return showFavorites
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if !showFavorites{
+            return
+        }
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            // Delete the row from the data source
+            let favorite = fontNames[indexPath.row]
+            FavoriteList.sharedFavoriteList.removeFavorite(favorite)
+            fontNames = FavoriteList.sharedFavoriteList.favorites
+            tableView.deleteRowsAtIndexPaths([indexPath],
+            withRowAnimation: UITableViewRowAnimation.Fade)
+        }
+
+    }
+    
+    override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+                FavoriteList.sharedFavoriteList.moveItem(fromIndex: sourceIndexPath.row, toIndex: destinationIndexPath.row)
+                fontNames = FavoriteList.sharedFavoriteList.favorites
+    }
+    
+    
 }
