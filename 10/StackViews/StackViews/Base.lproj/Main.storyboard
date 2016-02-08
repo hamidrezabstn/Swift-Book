@@ -39,16 +39,25 @@
                                                 <state key="normal" title="Next" backgroundImage="Image0">
                                                     <color key="titleColor" red="0.0" green="0.402285850235645" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dfp-1L-EhT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAs-dv-A7u">
                                                 <rect key="frame" x="207" y="0.0" width="186" height="30"/>
                                                 <animations/>
                                                 <state key="normal" title="Previous"/>
+                                                <connections>
+                                                    <action selector="prevImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b7b-RB-FLV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlm-d3-gxh">
                                                 <rect key="frame" x="413" y="0.0" width="187" height="30"/>
                                                 <animations/>
                                                 <state key="normal" title="Reset"/>
+                                                <connections>
+                                                    <action selector="resetImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6g1-Db-j25"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -67,6 +76,10 @@
                             <constraint firstItem="eoZ-sG-hDX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uIG-0l-wnB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageContainer" destination="dUL-oS-ZKC" id="NSk-uv-lpL"/>
+                        <outlet property="imageTitle" destination="7VY-FI-m0D" id="AcR-rt-Wxe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
