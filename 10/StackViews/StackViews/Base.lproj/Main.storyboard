@@ -16,27 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eoZ-sG-hDX">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" layoutMarginsRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eoZ-sG-hDX">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VY-FI-m0D">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VY-FI-m0D">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="747" misplaced="YES" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="dUL-oS-ZKC">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="747" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="dUL-oS-ZKC">
                                         <rect key="frame" x="0.0" y="30" width="600" height="510"/>
                                         <animations/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZE-fI-aUL">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bDw-eY-RJI">
                                         <rect key="frame" x="0.0" y="550" width="600" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZE-fI-aUL">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Next" backgroundImage="Image0">
+                                                    <color key="titleColor" red="0.0" green="0.402285850235645" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAs-dv-A7u">
+                                                <rect key="frame" x="207" y="0.0" width="186" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Previous"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlm-d3-gxh">
+                                                <rect key="frame" x="413" y="0.0" width="187" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Reset"/>
+                                            </button>
+                                        </subviews>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
+                                    </stackView>
                                 </subviews>
                                 <animations/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </stackView>
                         </subviews>
                         <animations/>
@@ -55,6 +74,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image0" width="16" height="16"/>
         <image name="image0" width="809" height="1024"/>
     </resources>
 </document>
