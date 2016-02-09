@@ -14,6 +14,7 @@
 		1F56A5021C69B6100095FAC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F56A5011C69B6100095FAC7 /* Assets.xcassets */; };
 		1F56A5051C69B6100095FAC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F56A5031C69B6100095FAC7 /* LaunchScreen.storyboard */; };
 		1F56A50D1C69C6B00095FAC7 /* PresidentList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F56A50C1C69C6B00095FAC7 /* PresidentList.plist */; settings = {ASSET_TAGS = (); }; };
+		1F56A50F1C69D77A0095FAC7 /* LanguageListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56A50E1C69D77A0095FAC7 /* LanguageListController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1F56A5041C69B6100095FAC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F56A5061C69B6100095FAC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F56A50C1C69C6B00095FAC7 /* PresidentList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PresidentList.plist; sourceTree = "<group>"; };
+		1F56A50E1C69D77A0095FAC7 /* LanguageListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1F56A5011C69B6100095FAC7 /* Assets.xcassets */,
 				1F56A5031C69B6100095FAC7 /* LaunchScreen.storyboard */,
 				1F56A5061C69B6100095FAC7 /* Info.plist */,
+				1F56A50E1C69D77A0095FAC7 /* LanguageListController.swift */,
 			);
 			path = Presidents;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				1F56A4FD1C69B6100095FAC7 /* DetailViewController.swift in Sources */,
 				1F56A4FB1C69B6100095FAC7 /* MasterViewController.swift in Sources */,
 				1F56A4F91C69B6100095FAC7 /* AppDelegate.swift in Sources */,
+				1F56A50F1C69D77A0095FAC7 /* LanguageListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
