@@ -13,6 +13,7 @@
 		1F56A5001C69B6100095FAC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F56A4FE1C69B6100095FAC7 /* Main.storyboard */; };
 		1F56A5021C69B6100095FAC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F56A5011C69B6100095FAC7 /* Assets.xcassets */; };
 		1F56A5051C69B6100095FAC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F56A5031C69B6100095FAC7 /* LaunchScreen.storyboard */; };
+		1F56A50D1C69C6B00095FAC7 /* PresidentList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F56A50C1C69C6B00095FAC7 /* PresidentList.plist */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1F56A5011C69B6100095FAC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F56A5041C69B6100095FAC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F56A5061C69B6100095FAC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F56A50C1C69C6B00095FAC7 /* PresidentList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PresidentList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		1F56A4F71C69B6100095FAC7 /* Presidents */ = {
 			isa = PBXGroup;
 			children = (
+				1F56A50C1C69C6B00095FAC7 /* PresidentList.plist */,
 				1F56A4F81C69B6100095FAC7 /* AppDelegate.swift */,
 				1F56A4FA1C69B6100095FAC7 /* MasterViewController.swift */,
 				1F56A4FC1C69B6100095FAC7 /* DetailViewController.swift */,
@@ -127,6 +130,7 @@
 				1F56A5051C69B6100095FAC7 /* LaunchScreen.storyboard in Resources */,
 				1F56A5021C69B6100095FAC7 /* Assets.xcassets in Resources */,
 				1F56A5001C69B6100095FAC7 /* Main.storyboard in Resources */,
+				1F56A50D1C69C6B00095FAC7 /* PresidentList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
