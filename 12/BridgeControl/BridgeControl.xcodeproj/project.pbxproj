@@ -14,6 +14,7 @@
 		1F4D8B861C6B146D001E554D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F4D8B851C6B146D001E554D /* Assets.xcassets */; };
 		1F4D8B891C6B146D001E554D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F4D8B871C6B146D001E554D /* LaunchScreen.storyboard */; };
 		1F4D8B911C6B14F4001E554D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1F4D8B901C6B14F4001E554D /* Settings.bundle */; settings = {ASSET_TAGS = (); }; };
+		1F8093811C6B2A660065E5CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8093801C6B2A660065E5CA /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1F4D8B881C6B146D001E554D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F4D8B8A1C6B146D001E554D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F4D8B901C6B14F4001E554D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1F8093801C6B2A660065E5CA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1F4D8B871C6B146D001E554D /* LaunchScreen.storyboard */,
 				1F4D8B8A1C6B146D001E554D /* Info.plist */,
 				1F4D8B901C6B14F4001E554D /* Settings.bundle */,
+				1F8093801C6B2A660065E5CA /* Constants.swift */,
 			);
 			path = BridgeControl;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				1F4D8B811C6B146D001E554D /* SecondViewController.swift in Sources */,
 				1F4D8B7D1C6B146D001E554D /* AppDelegate.swift in Sources */,
 				1F4D8B7F1C6B146D001E554D /* FirstViewController.swift in Sources */,
+				1F8093811C6B2A660065E5CA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +297,7 @@
 				1F4D8B8F1C6B146D001E554D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
