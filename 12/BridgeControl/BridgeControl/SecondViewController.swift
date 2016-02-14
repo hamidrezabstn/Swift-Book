@@ -27,16 +27,19 @@ class SecondViewController: UIViewController {
         
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setBool(engineSwitch.on, forKey: warpDriveKey)
+        defaults.synchronize()
     }
 
     @IBAction func onWarpSliderDragged(sender: UISlider) {
     
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setFloat(warpFactorSlider.value, forKey: warpFactorKey)
-    
+        defaults.synchronize()
     }
 
     @IBAction func onSettingsButtonTapped(sender: UIButton) {
+        UIApplication.sharedApplication().openURL(
+         NSURL(string: UIApplicationOpenSettingsURLString)!)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -47,6 +50,17 @@ class SecondViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         engineSwitch.on = defaults.boolForKey(warpDriveKey)
         warpFactorSlider.value = defaults.floatForKey(warpFactorKey)
+    }
+    
+    func applicationWillEnterForeground(notification:NSNotification) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.synchronize()
+        refreshFields()
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+            super.viewDidDisappear(animated)
+            NSNotificationCenter.defaultCenter().removeObserver(self)
     }
 }
 
